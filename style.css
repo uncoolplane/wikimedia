@@ -1,0 +1,187 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: auto 4em;
+}
+
+p {
+    padding: 1em;
+    /*border: 1px solid red;*/
+    line-height: 1.3em;
+}
+
+h1 {
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 1em auto;
+}
+
+a {
+    text-decoration: none;
+    color: #0645AD;
+}
+
+b {
+  font-weight: bold;
+}
+
+header a {
+  font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.content .item {
+    border: 1px solid blue;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    width: 100px;
+    height: 100px;
+    text-align:center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#item-1 {
+    background-image: url("img/enwiki-1.5x.png");
+}
+
+#item-2 {
+    background-image: url("img/135px-WiktionaryEn.svg.png");
+}
+
+#item-3 {
+    background-image: url("img/wikiquote.png");
+}
+
+#item-4 {
+    background-image: url("img/wikibooks.png");
+}
+
+#item-5 {
+    background-image: url("img/wikisource.png");
+}
+
+#item-6 {
+    background-image: url("img/Wiki.png");
+}
+
+#item-7 {
+    background-image: url("img/enwikiversity.png");
+}
+
+#item-8 {
+    background-image: url("img/specieswiki.png");
+}
+
+#item-9 {
+    background-image: url("img/mediawikiwiki.png");
+}
+
+#item-10 {
+    background-image: url("img/wikidatawiki.png");
+}
+
+#item-11 {
+    background-image: url("img/commonswiki.png");
+}
+
+#item-12 {
+    background-image: url("img/wikivoyage.png");
+}
+
+#item-13 {
+    background-image: url("img/metawiki.png");
+}
+
+#item-14 {
+    background-image: url("img/incubatorwiki.png");
+}
+
+#item-15 {
+    background-image: url("img/Labslogo_thumb.png");
+}
+
+#item-16 {
+    background-image: url("img/foundationwiki.png");
+}
+
+footer {
+    border-top: 1px solid gray;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer, footer a {
+    font-size: .9em;
+    text-align: center;
+}
+
+footer a, footer a:visited, footer a:active {
+    text-decoration: none;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    *, *::before, *::after {
+      /*font-size: 12px;*/
+    }
+
+    .content .item {
+        /*width: 100px;
+        height: 100px;*/
+    }
+    footer {
+      margin: 0 1em;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    *, *::before, *::after {
+      /*font-size: 14px;*/
+    }
+    .content .item {
+        /*width: 200px;
+        height: 200px;*/
+    }
+
+    footer {
+      margin: 0 30px;
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    *, *::before, *::after {
+      /*font-size: 18px;*/
+    }
+
+    .content .item {
+        /*width: 300px;
+        height: 300px;*/
+    }
+
+    footer {
+      margin: 0 50px;
+    }
+}
