@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
+    font-size: 20px;
     padding: 0;
     margin: 0;
 }
@@ -20,7 +21,9 @@ h1 {
     text-align: right;
     font-size: 1.1em;
     font-weight: bold;
-    margin: 1em auto;
+    /*margin: 1em 0;*/
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 a {
@@ -44,10 +47,8 @@ header a {
 }
 
 .content .item {
-    border: 1px solid blue;
-    /*margin-top: 1em;
-    margin-left: 1em;
-    margin-bottom: 1em;*/
+    /*border: 1px solid blue;*/
+    margin-top: 1em;
     width: 100px;
     height: 100px;
      text-align:center;
@@ -55,8 +56,11 @@ header a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
 
-    flex: 1;
+.flex {
+  flex: 1;
+  flex-basis: 25%;
 }
 
 #item-1 {
@@ -144,40 +148,21 @@ footer a, footer a:visited, footer a:active {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     *, *::before, *::after {
-      /*font-size: 12px;*/
+      font-size: 16px;
     }
 
-    .content .item {
-        /*width: 100px;
-        height: 100px;*/
-        flex-basis: 50%;
-    }
-    footer {
+    footer, header {
       margin: 0 1em;
     }
 }
 
-/*@media query (max-width:990px) {
-    .content {
-      display: block;
-    }
-    .content .item {
-      flex: none;
-    }
-}*/
-
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     *, *::before, *::after {
-      /*font-size: 14px;*/
-    }
-    .content .item {
-        /*width: 200px;
-        height: 200px;*/
-        flex-basis: 25%;
+      font-size: 20px;
     }
 
-    footer {
+    footer, header {
       margin: 0 30px;
     }
 }
@@ -186,15 +171,9 @@ footer a, footer a:visited, footer a:active {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     *, *::before, *::after {
-      /*font-size: 18px;*/
     }
 
-    .content .item {
-        /*width: 300px;
-        height: 300px;*/
-    }
-
-    footer {
+    footer, header {
       margin: 0 50px;
     }
 }
